@@ -1,0 +1,35 @@
+
+
+using System;
+
+namespace palindrom
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num = 12766;
+            int rem;
+            int result = 0;
+            int temp = num;
+            while(num>0)
+            {
+                rem = num % 10;
+                result = result * 10 + rem;
+                num = num / 10;
+
+            }
+            num = temp;
+            if(num==result)
+            {
+                Console.WriteLine("It is Palindrom");
+            }
+            else
+            {
+                Console.WriteLine("It is not Palindrom");
+            }
+            Console.ReadLine();
+
+        }
+    }
+}
